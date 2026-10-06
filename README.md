@@ -329,6 +329,7 @@
 |[ai-evaluation by Future AGI](https://github.com/future-agi/ai-evaluation) | Open-source LLM evaluation framework with 50+ metrics, LLM-as-Judge augmentation, and guardrail scanners (jailbreak, PII, prompt-injection); AutoEval pipelines with CI/CD support. |
 |[Future AGI](https://github.com/future-agi/future-agi) | Open-source self-hostable end-to-end agent engineering and optimization platform unifying tracing, evaluation, simulation, datasets, gateway, and guardrails in one feedback loop. |
 |[OpenClaw Monitor](https://github.com/flik2002/openclaw-monitor-frontend) |  AI monitoring dashboard for AI agents and LLMs. [Demo](https://flik2002.github.io/openclaw-monitor-frontend) |
+|[OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay) | Records a coding agent at the HTTP boundary and keeps the verbatim request and response bytes, so an incident can be re-executed offline from the trace rather than reconstructed from logs. Traces stay on disk; `orca scrub --match` redacts a trace in place. |
 
 ## Watermarking
 
@@ -440,6 +441,9 @@
 | [LEASH-8](https://github.com/Palo-Alto-AI-Research-Lab/agent-leash) | Control model for agents holding delegated authority, across eight domains: identity, secrets, tool/skill supply chain, approvals, containment, egress, observability, incident response. Ships a 24-statement scored self-assessment, the plan-vs-authorize gate pattern (model plans, policy decides, executor acts), an approval-design checklist for irreversible actions, and a reference A2A Agent Card. Docs and templates — no runtime component. | ![GitHub stars](https://img.shields.io/github/stars/Palo-Alto-AI-Research-Lab/agent-leash?style=social) |
 | [Trent AI](https://trent.ai) | Agentic AI security platform that continuously assesses AI agents, MCP servers, LLM and AI-native applications, and code shipped with AI coding tools, traces attack chains, and verifies proposed fixes landed. | Website |
 | [MandateGuard](https://github.com/ezequiellich44-cmd/MandateGuard) | Deterministic payment policy enforcement for AI agents: pre-action gate enforcing budgets, allowlists, denylists, rate limits, and signed Ed25519 payment mandates with zero LLM in the decision path (reproducible verdicts). Tamper-evident SHA-256 chained audit ledger; official MCP server on the Model Context Protocol Registry. | ![GitHub stars](https://img.shields.io/github/stars/ezequiellich44-cmd/MandateGuard?style=social) |
+| [agent-evidence-vectors](https://github.com/probityai/agent-evidence-vectors) | Conformance vectors for agent execution evidence: in-toto predicates, SCITT/COSE carriage and ACS core. Run your own verifier against them from PyPI, or as a GitHub Action whose job fails unless that verifier answered every vector. | ![GitHub stars](https://img.shields.io/github/stars/probityai/agent-evidence-vectors?style=social) |
+| [Orca AI Incident Archive](https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive) | Open database of real-world AI agent security incidents since 2025-01: one Markdown record per event with an attack-chain diagram and primary sources, a `real_harm` field separating confirmed victims from research demos, and tags such as prompt injection, MCP, agent supply chain, sandbox escape and rogue agent actions. JSON/CSV exports, CC BY 4.0. | ![GitHub stars](https://img.shields.io/github/stars/Continuum-AI-Corp/Orca-AI-Incident-Archive?style=social) |
+| [Agenthof](https://github.com/agenthof/agenthof) | Governance control plane that mediates an agent's model, tool/MCP, and exec calls from outside the model: per-call credential injection so the agent never holds a secret, per-agent least-privilege (per-tool allowlists, read-only grants, default-deny), and a hash-chained, tamper-evident audit ledger. Apache-2.0, Go. | ![GitHub stars](https://img.shields.io/github/stars/agenthof/agenthof?style=social) |
 | [TraceFold](https://github.com/TraceFold/tracefold) | Rust CLI that constructs and checks an inverse for AI coding-agent filesystem and git changes before they land, signs each verdict as a DSSE-attested receipt anchored in an append-only tamper-evident log, and gates writes through a Cedar policy engine with four verdict states (admit, deny, escalate, policy-error). | ![GitHub stars](https://img.shields.io/github/stars/TraceFold/tracefold?style=social) |
 
 
@@ -506,6 +510,7 @@
 | [DeepLearning.AI Red Teaming Course](https://www.deeplearning.ai/short-courses/red-teaming-llm-applications/) | Short course on red teaming LLM applications |
 | [Learn Prompting: Offensive Measures](https://learnprompting.org/docs/prompt_hacking/offensive_measures/) | Guide on offensive prompt engineering techniques |
 | [Application Security LLM Testing](https://application.security/free/llm) | Free LLM security testing  |
+| [RansomLeak AI Security Training](https://ransomleak.com/catalogue/ai-security/) | Hands-on labs on prompt injection, LLM abuse, and AI-powered attack scenarios |
 | [Salt Security Blog: ChatGPT Extensions Vulnerabilities](https://salt.security/blog/security-flaws-within-chatgpt-extensions-allowed-access-to-accounts-on-third-party-websites-and-sensitive-data) | Article on security flaws in ChatGPT browser extensions |
 | [safeguarding-llms](https://github.com/sshkhr/safeguarding-llms) | TMLS 2024 Workshop: A Practitioner's Guide To Safeguarding Your LLM Applications |
 | [Damn Vulnerable LLM Agent](https://github.com/WithSecureLabs/damn-vulnerable-llm-agent) | Intentionally vulnerable LLM agent for security testing and education |
@@ -525,6 +530,7 @@
 
 | Title | Authors | Year | 
 |-------|---------|------|
+| [📄 Local MCP Security: Why Loopback Is Not Enough](https://cadre.cam/guides/local-mcp-security.html) | Cadre Engineering | 2026 |
 | [📄 Bypassing Meta's LLaMA Classifier: A Simple Jailbreak](https://www.robustintelligence.com/blog-posts/bypassing-metas-llama-classifier-a-simple-jailbreak) | Robust Intelligence | 2024 |
 | [📄 Vulnerabilities in LangChain Gen AI](https://unit42.paloaltonetworks.com/langchain-vulnerabilities/) | Unit42 | 2024 |
 | [📄 Detecting Prompt Injection: BERT-based Classifier](https://labs.withsecure.com/publications/detecting-prompt-injection-bert-based-classifier) | WithSecure Labs | 2024 |
@@ -723,5 +729,4 @@
 | [Taming the Beast: Inside the Llama 3 Red Teaming Process](https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Aaron%20Grattafiori%20Ivan%20Evtimov%20Joanna%20Bitton%20Maya%20Pavlova%20-%20Taming%20the%20Beast%20-%20Inside%20the%20Llama%203%20Red%20Team%20Process.pdf) | DEF CON 32 presentation on Llama 3 red teaming | 2024 |
 | [SecLens](https://github.com/mattersec-labs/seclens) | Benchmark for evaluating LLMs on real-world vulnerability detection using 406 confirmed CVEs across 10 languages. Scores 12 frontier models through 5 stakeholder lenses and 35 dimensions aligned with OWASP categories. [Paper](https://arxiv.org/abs/2604.01637) | ![GitHub stars](https://img.shields.io/github/stars/mattersec-labs/seclens?style=social) |
 | [Benchmarking OpenClaw Skill Scanners](https://trent.ai/blog/openclaw-skill-scanner-benchmark/) | Benchmark of five skill scanners (NVIDIA SkillSpector, VirusTotal, ClawScan, static analysis) on 60 manually labeled ClawHub skills — 20 benign, 20 vulnerable, 20 malicious — across code-based and code-free attack vectors. Labeled dataset public. | Article |
-
 
